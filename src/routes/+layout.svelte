@@ -1,46 +1,48 @@
 <script>
-	import "../app.css";
-	import Navbar from "../components/Navbar.svelte";
-  </script>
-  
-  <div class="flex flex-col h-screen pt-20">
+	import '../app.css';
+	import Navbar from '../components/Navbar.svelte';
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+	inject({ mode: dev ? 'development' : 'production' });
+</script>
+
+<div class="flex flex-col h-screen pt-20">
 	<section class="top-0 fixed w-screen z-20 shadow-md">
-	  <Navbar />
+		<Navbar />
 	</section>
-  
+
 	<main>
-	  <slot />
+		<slot />
 	</main>
-  
+
 	<footer class="bg-cyan-800 h-20">
-	  <p class="text-white">
-		© 2023 The Landing Laundromat is a registered trademark. All Rights Reserved.
-	  </p>
+		<p class="text-white">
+			© 2023 The Landing Laundromat is a registered trademark. All Rights Reserved.
+		</p>
 	</footer>
-  </div>
-  
-  <svelte:head>
+</div>
+
+<svelte:head>
 	<title>The Landing Laundromat</title>
-  </svelte:head>
-  
-  <style>
+</svelte:head>
+
+<style>
 	main {
-	  flex: 1;
-	  display: flex;
-	  flex-direction: column;
-	  /* padding: 1rem; */
-	  width: 100%;
-	  /* max-width: 64rem; */
-	  margin: 0 auto;
-	  box-sizing: border-box;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		/* padding: 1rem; */
+		width: 100%;
+		/* max-width: 64rem; */
+		margin: 0 auto;
+		box-sizing: border-box;
 	}
-  
+
 	footer {
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: center;
-	  align-items: center;
-	  padding: 12px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 12px;
 	}
-  </style>
-  
+</style>

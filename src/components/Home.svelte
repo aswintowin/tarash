@@ -2,20 +2,26 @@
   import { Carousel } from "flowbite-svelte";
   import Section from "./Section.svelte";
 
-  import StoreFront from "$lib/images/Storefront.jpeg";
-  import Inside1 from "$lib/images/Inside1.jpg";
-  import Inside2 from "$lib/images/Inside2.jpg";
-  import Inside3 from "$lib/images/Inside3.jpg";
-  import Machines from "$lib/images/Machine1.jpg";
-  import RoadSign from "$lib/images/Roadsign.jpeg";
+  import StoreFront from "$lib/images/1.jpg";
+  import Inside1 from "$lib/images/2.jpg";
+  import Inside2 from "$lib/images/3.jpg";
+  import Inside3 from "$lib/images/4.jpg";
+  import Machines from "$lib/images/Inside1.jpg";
+  import Inside2O from "$lib/images/home/Inside2.jpg";
+  import Inside23 from "$lib/images/home/Inside3.jpg";
+  import Machines2 from "$lib/images/home/Machine1.jpg";
+  import StoreFront1 from "$lib/images/home/Storefront.jpeg";
 
   const images = [
     { alt: "Store front", src: StoreFront },
-    { alt: "Machines", src: Inside1 },
+    { alt: "Inside1", src: Inside1 },
     { alt: "Machines", src: Inside2 },
     { alt: "Machines", src: Inside3 },
     { alt: "Machines", src: Machines },
-    { alt: "Machines", src: RoadSign }
+    { alt: "Machines", src: Inside2O },
+    { alt: "Machines", src: Inside23 },
+    { alt: "Machines", src: Machines2 },
+    { alt: "Machines", src: StoreFront1 },
   ];
 </script>
 

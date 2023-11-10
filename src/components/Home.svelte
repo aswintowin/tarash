@@ -25,14 +25,14 @@
   ];
 </script>
 
-<Section sectionId="home" backGroundColor="bg-slate-900">
+<Section sectionId="home" backGroundColor="bg-slate-900" padding={"md:p-24"}>
   <div class="home bg-white p-10 md:rounded-2xl">
     <div class="flex flex-col justify-center text-center">
-      <p class="font-semibold mb-4 text-2xl text-cyan-800 font-serif">
+      <p class="font-semibold mb-4 text-2xl dark:text-cyan-50 text-cyan-800 font-serif">
         Comprehensive Laundry Services Tailored to Your Convenience
       </p>
 
-      <p class="font-bold mb-6 text-4xl text-cyan-500">Free pickup and Delivery</p>
+      <p class="font-bold mb-6 text-4xl dark:text-cyan-100 text-cyan-500">Free pickup and Delivery</p>
     </div>
     <Carousel {images} let:Controls duration={3500}>
       <Controls />

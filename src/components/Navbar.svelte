@@ -4,7 +4,7 @@
   let nonActiveClass = "text-lg";
 </script>
 
-<Navbar>
+<Navbar class="dark:bg-white">
   <NavBrand href="/">
     <img src={logo} class="h-12 md:h-16" alt="The Landing Laundromat" />
   </NavBrand>

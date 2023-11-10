@@ -1,7 +1,7 @@
 <script>
   import { readable } from "svelte/store";
   import Section from "./Section.svelte";
-  import Laundry from "$lib/images/services/laundry.jpg";
+  import Laundry from "$lib/images/services/machines.jpg";
   import WDF from "$lib/images/services/washfolddry.jpg";
   import PAD from "$lib/images/services/pickup.jfif";
   import Header from "./Header.svelte";

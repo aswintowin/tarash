@@ -15,7 +15,7 @@
 		<slot />
 	</main>
 
-	<footer class="bg-cyan-800 h-20">
+	<footer class="bg-slate-800 h-20">
 		<p class="text-white">
 			© 2023 The Landing Laundromat is a registered trademark. All Rights Reserved.
 		</p>

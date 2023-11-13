@@ -2,34 +2,34 @@
 
 const config = {
 	content: [
-	  "./src/**/*.{html,js,svelte,ts}",
-	  "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}"
+		'./src/**/*.{html,js,svelte,ts}',
+		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
 	],
-  
-	plugins: [require("flowbite/plugin")],
-  
-	darkMode: "class",
-  
+
+	plugins: [require('flowbite/plugin')],
+
+	darkMode: 'class',
+
 	theme: {
-	  extend: {
-		colors: {
-		  // flowbite-svelte
-		  primary: {
-			50: "#ECFEFF",
-			100: "#CFFAFE",
-			200: "#A5F3FC",
-			300: "#67E8F9",
-			400: "#22D3EE",
-			500: "#06B6D4",
-			600: "#0891B2",
-			700: "#0E7490",
-			800: "#155E75",
-			900: "#164E63"
-		  }
+		extend: {
+			colors: {
+				// flowbite-svelte
+				primary: {
+					50: '#f8fafc',
+					100: '#f1f5f9',
+					200: '#e2e8f0',
+					300: '#cbd5e1',
+					400: '#94a3b8',
+					500: '#64748b',
+					600: '#475569',
+					700: '#334155',
+					800: '#1e293b',
+					900: '#0f172a',
+					950: '#020617'
+				}
+			}
 		}
-	  }
 	}
-  };
-  
-  module.exports = config;
-  
+};
+
+module.exports = config;

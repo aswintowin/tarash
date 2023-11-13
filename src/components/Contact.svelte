@@ -38,7 +38,7 @@
 	}
 </script>
 
-<Section sectionId="contact" backGroundColor="bg-gray-50">
+<Section sectionId="contact" backGroundColor="bg-slate-50">
 	<Header title="Contact us" />
 	<div class="md:flex md:flex-row">
 		<div class="md:w-4/5 md:float-right md:border-solid md:border-r-4 md:pr-12 border-slate-900">

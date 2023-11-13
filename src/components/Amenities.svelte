@@ -59,7 +59,7 @@
   );
 </script>
 
-<Section sectionId="ameneties" backGroundColor="">
+<Section sectionId="ameneties" backGroundColor="bg-gray-100">
   <div class="flex flex-col items-center">
     <Header title="Ameneties" />
     <div class="grid gap-10 grid-cols-2 md:grid-cols-5">

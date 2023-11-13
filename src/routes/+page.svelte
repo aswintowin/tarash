@@ -9,6 +9,6 @@
   <Home />
   <Contact />
   <Services />
-  <Amenities />
   <FAQ />
+  <Amenities />
   

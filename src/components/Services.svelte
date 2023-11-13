@@ -30,7 +30,7 @@
   );
 </script>
 
-<Section sectionId="services" backGroundColor="bg-zinc-100">
+<Section sectionId="services" backGroundColor="bg-gray-100">
   <div class="flex flex-col items-center">
     <Header title="Our Services" />
 

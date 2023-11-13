@@ -25,8 +25,10 @@
 	let phone = '';
 	let email = '';
 	let message = '';
+	let isLoading = false;
 
 	async function doPost() {
+		isLoading = true;
 		let body = {
 			first_name,
 			last_name,
@@ -35,6 +37,7 @@
 			comment: message
 		};
 		result = await submitContact(body);
+		isLoading = false;
 	}
 </script>
 
@@ -78,7 +81,7 @@
 							type="tel"
 							id="phone"
 							placeholder="1234566789"
-							pattern={'[0-9]{3}-[0-9]{3}-[0-9]{4}'}
+							pattern={'[0-9]{10}'}
 							required
 							bind:value={phone}
 						/>
@@ -88,7 +91,7 @@
 					<Textarea {...textareaprops} bind:value={message} />
 				</div>
 				<div class="flex items-center">
-					<Button type="submit" on:click={doPost}>Submit</Button>
+					<Button type="submit" on:click={doPost} disabled={isLoading}>Submit</Button>
 					<p class="text-green-400 font-semibold text-lg px-4" hidden={!result}>
 						Thank you for contacting us!
 					</p>

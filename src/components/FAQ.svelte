@@ -4,6 +4,8 @@
 	import { Label, Input, Textarea, Button } from 'flowbite-svelte';
 	import Header from './Header.svelte';
 	import submitContact from './api/api';
+
+	let isLoading = false;
 	let textareaprops = {
 		id: 'message',
 		name: 'message',
@@ -62,6 +64,7 @@
 	let message = '';
 
 	async function doPost() {
+		isLoading = true;
 		let body = {
 			first_name: name,
 			last_name: '',
@@ -70,6 +73,7 @@
 			comment: message
 		};
 		result = await submitContact(body);
+		isLoading = false;
 	}
 </script>
 
@@ -126,7 +130,7 @@
 					<Textarea {...textareaprops} bind:value={message} />
 				</div>
 				<div class="flex items-center mb-10">
-					<Button type="submit" on:click={doPost}>Submit</Button>
+					<Button type="submit" on:click={doPost} disabled={isLoading}>Submit</Button>
 					<p class="text-green-400 font-semibold text-lg px-4" hidden={!result}>
 						Thank you! We will get in touch with you as soon as possible.
 					</p>

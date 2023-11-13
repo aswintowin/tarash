@@ -10,8 +10,7 @@
 		id: 'message',
 		name: 'message',
 		label: 'Your message',
-		rows: 4,
-		placeholder: 'Leave a message...'
+		rows: 4
 	};
 
 	const faqs = readable(
@@ -112,21 +111,15 @@
 				<div class="grid gap-6 mb-6 md:grid-cols-2">
 					<div>
 						<Label for="name" class="mb-2 text-white">Name</Label>
-						<Input type="text" id="name" bind:value={name} placeholder="John" required />
+						<Input type="text" id="name" bind:value={name} required />
 					</div>
 					<div>
 						<Label for="phone" class="mb-2 text-white">Phone number</Label>
-						<Input
-							type="tel"
-							id="phone"
-							placeholder="1234566789"
-							pattern={'[0-9]{10}'}
-							bind:value={phone}
-							required
-						/>
+						<Input type="tel" id="phone" pattern={'[0-9]{10}'} bind:value={phone} required />
 					</div>
 				</div>
 				<div class="mb-6">
+					<Label for="name" class="mb-2 text-white">Message</Label>
 					<Textarea {...textareaprops} bind:value={message} />
 				</div>
 				<div class="flex items-center mb-10">

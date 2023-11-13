@@ -13,8 +13,7 @@
 		id: 'message',
 		name: 'message',
 		label: 'Your message',
-		rows: 4,
-		placeholder: 'Leave a comment...'
+		rows: 4
 	};
 	/**
 	 * @type {string | null}
@@ -53,41 +52,23 @@
 				<div class="grid gap-6 mb-6 md:grid-cols-2">
 					<div>
 						<Label for="first_name" class="mb-2">First name</Label>
-						<Input
-							type="text"
-							id="first_name"
-							placeholder="John"
-							required
-							bind:value={first_name}
-						/>
+						<Input type="text" id="first_name" required bind:value={first_name} />
 					</div>
 					<div>
 						<Label for="last_name" class="mb-2">Last name</Label>
-						<Input type="text" id="last_name" placeholder="Doe" required bind:value={last_name} />
+						<Input type="text" id="last_name" required bind:value={last_name} />
 					</div>
 					<div>
 						<Label for="email" class="mb-2">Email address</Label>
-						<Input
-							type="email"
-							id="email"
-							placeholder="john.doe@company.com"
-							required
-							bind:value={email}
-						/>
+						<Input type="email" id="email" required bind:value={email} />
 					</div>
 					<div>
 						<Label for="phone" class="mb-2">Phone number</Label>
-						<Input
-							type="tel"
-							id="phone"
-							placeholder="1234566789"
-							pattern={'[0-9]{10}'}
-							required
-							bind:value={phone}
-						/>
+						<Input type="tel" id="phone" pattern={'[0-9]{10}'} required bind:value={phone} />
 					</div>
 				</div>
 				<div class="mb-6">
+					<Label for="phone" class="mb-2">Message</Label>
 					<Textarea {...textareaprops} bind:value={message} />
 				</div>
 				<div class="flex items-center">

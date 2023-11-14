@@ -63,7 +63,7 @@
 				{#each $faqs as faq}
 					<AccordionItem>
 						<span slot="header">{faq.header}</span>
-						<p class="mb-2 text-slate-900 dark:text-slate-400">
+						<p class="mb-2 text-slate-900 dark:text-slate-400 font-serif text-md font-medium">
 							{faq.description}
 						</p>
 					</AccordionItem>

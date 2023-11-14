@@ -10,7 +10,7 @@
 	</NavBrand>
 	<div class="flex md:order-2">
 		<Button href="/schedule" size="sm">Request free pickup</Button>
-		<!-- <NavHamburger /> -->
+		<NavHamburger />
 	</div>
 	<NavUl {nonActiveClass} class="order-1">
 		<NavLi href="/">Home</NavLi>

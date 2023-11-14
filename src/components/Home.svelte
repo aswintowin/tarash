@@ -1,12 +1,13 @@
 <script>
 	import { Carousel } from 'flowbite-svelte';
 	import Section from './Section.svelte';
+	import { Button } from 'flowbite-svelte';
 
 	import StoreFront from '$lib/images/1.jpg';
 	import Inside1 from '$lib/images/2.jpg';
 	import Inside2 from '$lib/images/3.jpg';
 	import Inside3 from '$lib/images/4.jpg';
-	import Machines from '$lib/images/Inside1.jpg';
+	import Machines from '$lib/images/Machines.jpg';
 	import Inside2O from '$lib/images/home/Inside2.jpg';
 	import Inside23 from '$lib/images/home/Inside3.jpg';
 	import Machines2 from '$lib/images/home/Machine1.jpg';
@@ -25,26 +26,30 @@
 	];
 </script>
 
-<Section sectionId="home" backGroundColor="bg-slate-900" padding={'md:p-24'}>
-	<div class="home bg-white p-10 md:rounded-2xl">
-		<div class="flex flex-col justify-center text-center">
-			<p class="font-semibold mb-4 text-2xl dark:text-cyan-50 text-cyan-800 font-serif">
-				Comprehensive Laundry Services Tailored to Your Convenience
-			</p>
+<section id="home" class="home w-full h-fit">
+	<div class=" flex flex-col justify-center items-center h-full">
+		<p class="font-semibold mb-4 md:text-5xl text-2xl text-slate-200 font-serif">
+			Leave the Laundry to Us
+		</p>
 
-			<p class="font-bold mb-6 text-4xl dark:text-cyan-100 text-cyan-500">
-				Free pickup and Delivery
-			</p>
-		</div>
-		<Carousel {images} let:Controls duration={3500}>
-			<Controls />
-		</Carousel>
+		<p class="font-bold mb-6 md:text-lg text-xs text-slate-200 font-serif">
+			You deserve clean laundry, and that’s our speciality.
+		</p>
+		<Button href="/schedule" size="xl" color="light">Request free pickup</Button>
 	</div>
-</Section>
+	<!-- <Carousel {images} let:Controls duration={3500}>
+			<Controls />
+		</Carousel> -->
+</section>
 
 <style>
 	.home {
 		max-width: 72rem;
 		margin: 0 auto;
+		background-image: url('$lib/images/Medium.jpg');
+		max-width: 100%;
+		max-height: 100%;
+		height: 400px;
+		object-fit: fit;
 	}
 </style>

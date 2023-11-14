@@ -76,9 +76,7 @@
 			<P weight="semibold" class="text-white text-3xl mb-10 font-serif">
 				Ready to place your first order?
 			</P>
-			<Button href="/schedule" size="xl" class="bg-white text-slate-900 hover:bg-slate-200"
-				>Request free pickup</Button
-			>
+			<Button href="/schedule" size="xl" color="light">Request free pickup</Button>
 			<P weight="semibold" class="text-white m-4">Or call us</P>
 			<P weight="bold" class="text-white text-xl">(781) 660-4972</P>
 		</div>

@@ -9,7 +9,7 @@
 		<img src={logo} class="h-12 md:h-16" alt="The Landing Laundromat" />
 	</NavBrand>
 	<div class="flex md:order-2">
-		<Button href="#schedule" size="sm">Request free pickup</Button>
+		<Button href="/schedule" size="sm">Request free pickup</Button>
 		<!-- <NavHamburger /> -->
 	</div>
 	<NavUl {nonActiveClass} class="order-1">

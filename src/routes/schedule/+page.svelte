@@ -3,7 +3,7 @@
 	import Laundry from '$lib/images/services/machines.jpg';
 	import WDF from '$lib/images/services/washfolddry.jpg';
 	import PAD from '$lib/images/services/pickup.jfif';
-	import Header from './Header.svelte';
+	import Header from '../../components/Header.svelte';
 
 	const services = readable(
 		Object.freeze([
@@ -29,18 +29,16 @@
 	);
 </script>
 
-<section id="schedule" class="md:m-2">
-	<div class="flex flex-col items-center">
-		<Header title="" />
+<div class="flex flex-col items-center md:m-2">
+	<Header title="" />
 
-		<iframe
-			id="iFrame"
-			name="iFrame"
-			src="https://cleancloudapp.com/s3/28658"
-			height="750"
-			width="100%"
-			frameborder="0"
-			sandbox="allow-modals allow-top-navigation allow-scripts allow-forms allow-pointer-lock allow-same-origin"
-		/>
-	</div>
-</section>
+	<iframe
+		id="iFrame"
+		name="iFrame"
+		src="https://cleancloudapp.com/s3/28658"
+		height="750"
+		width="100%"
+		frameborder="0"
+		sandbox="allow-modals allow-top-navigation allow-scripts allow-forms allow-pointer-lock allow-same-origin"
+	/>
+</div>

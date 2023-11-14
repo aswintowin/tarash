@@ -26,7 +26,7 @@
 </script>
 
 <Section sectionId="home" backGroundColor="bg-slate-900" padding={'md:p-24'}>
-	<div class="home md:bg-white bg-slate-100 p-10 md:rounded-2xl">
+	<div class="home bg-white p-10 md:rounded-2xl">
 		<div class="flex flex-col justify-center text-center">
 			<p class="font-semibold mb-4 text-2xl dark:text-cyan-50 text-cyan-800 font-serif">
 				Comprehensive Laundry Services Tailored to Your Convenience

@@ -9,7 +9,8 @@
 
 <Home />
 <Schedule />
-<FAQ />
 <Services />
-<Contact />
+<FAQ />
 <Amenities />
+<Contact />
+

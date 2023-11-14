@@ -29,7 +29,7 @@
 	);
 </script>
 
-<section id="schedule" class="p-12">
+<section id="schedule" class="md:m-2">
 	<div class="flex flex-col items-center">
 		<Header title="" />
 
@@ -37,7 +37,7 @@
 			id="iFrame"
 			name="iFrame"
 			src="https://cleancloudapp.com/s3/28658"
-			height="700"
+			height="750"
 			width="100%"
 			frameborder="0"
 			sandbox="allow-modals allow-top-navigation allow-scripts allow-forms allow-pointer-lock allow-same-origin"

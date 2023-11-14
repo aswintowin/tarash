@@ -4,13 +4,13 @@
 	let nonActiveClass = 'text-lg';
 </script>
 
-<Navbar id="menu" class="dark:bg-white">
+<Navbar id="menu" class="dark:bg-white h-20">
 	<NavBrand href="/">
 		<img src={logo} class="h-12 md:h-16" alt="The Landing Laundromat" />
 	</NavBrand>
 	<div class="flex md:order-2">
 		<Button href="#schedule" size="sm">Request free pickup</Button>
-		<NavHamburger />
+		<!-- <NavHamburger /> -->
 	</div>
 	<NavUl {nonActiveClass} class="order-1">
 		<NavLi href="/">Home</NavLi>

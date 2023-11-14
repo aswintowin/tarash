@@ -79,7 +79,7 @@
 				</div>
 			</form>
 		</div>
-		<div class="md:w-1/5 md:flex md:flex-col justify-center m-12 md:mx-12">
+		<div class="md:w-1/5 md:flex md:flex-col justify-center m-8 md:mx-12">
 			<p class="text-lg font-bold pb-2 text-slate-900 flex items-center">
 				<PhoneOutline class="mr-2" />PHONE
 			</p>

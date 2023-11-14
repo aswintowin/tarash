@@ -1,17 +1,9 @@
 <script>
 	import { AccordionItem, Accordion, P } from 'flowbite-svelte';
 	import { readable } from 'svelte/store';
-	import { Label, Input, Textarea, Button } from 'flowbite-svelte';
+	import { Button } from 'flowbite-svelte';
 	import Header from './Header.svelte';
 	import submitContact from './api/api';
-
-	let isLoading = false;
-	let textareaprops = {
-		id: 'message',
-		name: 'message',
-		label: 'Your message',
-		rows: 4
-	};
 
 	const faqs = readable(
 		Object.freeze([
@@ -52,28 +44,6 @@
 			}
 		])
 	);
-
-	/**
-	 * @type {string | null}
-	 */
-	let result = null;
-	let name = '';
-	let phone = '';
-	let email = '';
-	let message = '';
-
-	async function doPost() {
-		isLoading = true;
-		let body = {
-			first_name: name,
-			last_name: '',
-			email,
-			phone,
-			comment: message
-		};
-		result = await submitContact(body);
-		isLoading = false;
-	}
 </script>
 
 <section id="faq">
@@ -107,30 +77,10 @@
 			<P weight="semibold" class="text-white text-3xl mb-10 font-serif">
 				Ready to place your first order?
 			</P>
-			<form class="border-b-2 border-solid border-white">
-				<div class="grid gap-6 mb-6 md:grid-cols-2">
-					<div>
-						<Label for="name" class="mb-2 text-white">Name</Label>
-						<Input type="text" id="name" bind:value={name} required />
-					</div>
-					<div>
-						<Label for="phone" class="mb-2 text-white">Phone number</Label>
-						<Input type="tel" id="phone" pattern={'[0-9]{10}'} bind:value={phone} required />
-					</div>
-				</div>
-				<div class="mb-6">
-					<Label for="name" class="mb-2 text-white">Message</Label>
-					<Textarea {...textareaprops} bind:value={message} />
-				</div>
-				<div class="flex items-center mb-10">
-					<Button type="submit" on:click={doPost} disabled={isLoading}>Submit</Button>
-					<p class="text-green-400 font-semibold text-lg px-4" hidden={!result}>
-						Thank you! We will get in touch with you as soon as possible.
-					</p>
-				</div>
-			</form>
+			<Button href="#schedule" size="xl" class="bg-white text-slate-900">Request free pickup</Button
+			>
 			<P weight="semibold" class="text-white m-4">Or call us</P>
-			<P weight="bold" class="text-white text-lg">(781) 660-4972</P>
+			<P weight="bold" class="text-white text-xl">(781) 660-4972</P>
 		</div>
 	</faq>
 </section>

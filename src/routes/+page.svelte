@@ -4,10 +4,12 @@
 	import Services from '../components/Services.svelte';
 	import Amenities from '../components/Amenities.svelte';
 	import Home from '../components/Home.svelte';
+	import Schedule from '../components/Schedule.svelte';
 </script>
 
 <Home />
-<Contact />
-<Services />
+<Schedule />
 <FAQ />
+<Services />
+<Contact />
 <Amenities />

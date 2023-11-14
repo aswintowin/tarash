@@ -3,7 +3,6 @@
 	import { readable } from 'svelte/store';
 	import { Button } from 'flowbite-svelte';
 	import Header from './Header.svelte';
-	import submitContact from './api/api';
 
 	const faqs = readable(
 		Object.freeze([
@@ -48,7 +47,7 @@
 
 <section id="faq">
 	<faq class="flex flex-row">
-		<div class="md:w-3/5 float-right md:p-24 p-10">
+		<div class="md:w-2/3 float-right md:p-24 p-10">
 			<Header title="Frequently Asked Questions" />
 
 			<P weight="semibold" class="mb-4">
@@ -64,7 +63,7 @@
 				{#each $faqs as faq}
 					<AccordionItem>
 						<span slot="header">{faq.header}</span>
-						<p class="mb-2 text-gray-500 dark:text-gray-400">
+						<p class="mb-2 text-slate-900 dark:text-slate-400">
 							{faq.description}
 						</p>
 					</AccordionItem>
@@ -72,12 +71,13 @@
 			</Accordion>
 		</div>
 		<div
-			class="md:w-2/5 md:flex md:flex-col hidden bg-slate-900 p-12 md:justify-center md:items-center"
+			class="md:w-1/3 md:flex md:flex-col hidden bg-slate-900 p-12 md:justify-center md:items-center"
 		>
 			<P weight="semibold" class="text-white text-3xl mb-10 font-serif">
 				Ready to place your first order?
 			</P>
-			<Button href="/schedule" size="xl" class="bg-white text-slate-900">Request free pickup</Button
+			<Button href="/schedule" size="xl" class="bg-white text-slate-900 hover:bg-slate-200"
+				>Request free pickup</Button
 			>
 			<P weight="semibold" class="text-white m-4">Or call us</P>
 			<P weight="bold" class="text-white text-xl">(781) 660-4972</P>

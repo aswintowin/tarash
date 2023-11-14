@@ -11,4 +11,3 @@
 <FAQ />
 <Amenities />
 <Contact />
-

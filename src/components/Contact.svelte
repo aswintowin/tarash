@@ -73,31 +73,31 @@
 				</div>
 				<div class="flex items-center">
 					<Button type="submit" on:click={doPost} disabled={isLoading}>Submit</Button>
-					<p class="text-green-400 font-semibold text-lg px-4" hidden={!result}>
+					<p class="text-green-400 font-semibold text-md px-4" hidden={!result}>
 						Thank you for contacting us!
 					</p>
 				</div>
 			</form>
 		</div>
 		<div class="md:w-1/5 md:flex md:flex-col justify-center m-8 md:mx-12">
-			<p class="text-lg font-bold pb-2 text-slate-900 flex items-center">
+			<p class="text-md font-bold pb-2 text-slate-900 flex items-center">
 				<PhoneOutline class="mr-2" />PHONE
 			</p>
-			<p class="font-serif text-lg">(781) 660-4972</p>
-			<p class="text-lg font-bold pt-6 pb-2 text-slate-900 flex items-center">
+			<p class="font-serif text-md">(781) 660-4972</p>
+			<p class="text-md font-bold pt-6 pb-2 text-slate-900 flex items-center">
 				<EnvelopeOutline class="mr-2" />EMAIL
 			</p>
-			<p class="font-serif text-lg">thelandinglaundromat@gmail.com</p>
-			<p class="text-lg font-bold pt-6 pb-2 text-slate-900 flex items-center">
+			<p class="font-serif text-md">thelandinglaundromat@gmail.com</p>
+			<p class="text-md font-bold pt-6 pb-2 text-slate-900 flex items-center">
 				<BuildingOutline class="mr-2" />HOURS
 			</p>
-			<p class="font-serif text-lg">Open every day from 5:30AM - 10PM</p>
-			<p class="font-serif text-md">(Last wash at 9PM)</p>
+			<p class="font-serif text-md">Open every day from 5:00 AM - 10:00 PM</p>
+			<p class="font-serif text-md">(Last wash at 9:00 PM)</p>
 
-			<p class="text-lg font-bold pt-6 pb-2 text-slate-900 flex items-center">
+			<p class="text-md font-bold pt-6 pb-2 text-slate-900 flex items-center">
 				<MapLocationOutline class="mr-2" /> ADDRESS
 			</p>
-			<p class="font-serif text-lg">69 Broad Street, Weymouth, MA 02188</p>
+			<p class="font-serif text-md">69 Broad Street, Weymouth, MA 02188</p>
 		</div>
 	</div>
 </Section>

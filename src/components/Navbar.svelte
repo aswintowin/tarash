@@ -1,7 +1,7 @@
 <script>
 	import logo from '$lib/images/logo.webp';
 	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Button, Input } from 'flowbite-svelte';
-	let nonActiveClass = 'text-lg';
+	let nonActiveClass = 'text-md';
 	import { page } from '$app/stores';
 	$: activeUrl = $page.url.pathname;
 </script>
@@ -23,6 +23,7 @@
 			<NavLi href="#faq">FAQ</NavLi>
 			<NavLi href="#ameneties">Ameneties</NavLi>
 			<NavLi href="#contact">Contact</NavLi>
+			<NavLi href="/schedule">Order</NavLi>
 		{/if}
 	</NavUl>
 </Navbar>

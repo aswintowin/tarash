@@ -15,7 +15,7 @@
 		<Button href="/schedule" size="xl" color="light">Request free pickup</Button>
 	</div>
 </section>
-<div class="md:h-96 md:py-12 p-4 md:flex md:flex-row md:m-auto md:w-2/3">
+<div class="md:h-80 md:py-12 p-4 md:flex md:flex-row md:m-auto md:w-2/3">
 	<div class="md:w-1/4 md:mx-12 m-8 md:my-0">
 		<p class="text-lg font-bold pb-2 text-slate-900 flex items-center">
 			<MapLocationOutline class="mr-2" /> ADDRESS

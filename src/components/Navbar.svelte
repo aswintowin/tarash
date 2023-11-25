@@ -21,7 +21,7 @@
 		{#if !activeUrl.includes('schedule')}
 			<NavLi href="#services">Services</NavLi>
 			<NavLi href="#faq">FAQ</NavLi>
-			<NavLi href="#ameneties">Ameneties</NavLi>
+			<NavLi href="#ameneties">Amenities</NavLi>
 			<NavLi href="#contact">Contact</NavLi>
 			<NavLi href="/schedule">Order</NavLi>
 		{/if}

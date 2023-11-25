@@ -61,7 +61,7 @@
 
 <Section sectionId="ameneties" backGroundColor="bg-slate-100">
 	<div class="flex flex-col items-center">
-		<Header title="Ameneties" />
+		<Header title="Amenities" />
 		<div class="grid gap-10 grid-cols-1 md:grid-cols-5">
 			{#each $services as service}
 				<div class=" flex max-w-sm rounded-3xl flex-col items-center">

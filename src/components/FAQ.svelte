@@ -35,11 +35,6 @@
 				header: 'What is the last wash time?',
 				description:
 					'The posted time for starting the last wash is 9:00 PM. This typically allows enough time for our customers to finish washing, drying and folding their clothes by 10:00 PM.'
-			},
-			{
-				header: 'What is the last wash time?',
-				description:
-					'The posted time for starting the last wash is 9:00 PM. This typically allows enough time for our customers to finish washing, drying and folding their clothes by 10:00 PM.'
 			}
 		])
 	);

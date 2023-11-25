@@ -20,9 +20,11 @@
 		<NavLi href="/">Home</NavLi>
 		{#if !activeUrl.includes('schedule')}
 			<NavLi href="#services">Services</NavLi>
+			<NavLi href="#pricing">Pricing</NavLi>
 			<NavLi href="#faq">FAQ</NavLi>
 			<NavLi href="#ameneties">Amenities</NavLi>
 			<NavLi href="#contact">Contact</NavLi>
+			<NavLi href="/schedule">Order</NavLi>
 		{/if}
 	</NavUl>
 </Navbar>

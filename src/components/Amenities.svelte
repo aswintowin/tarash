@@ -13,7 +13,7 @@
 	import Car from '$lib/images/ameneties/car.svg';
 	import Camera from '$lib/images/ameneties/camera.svg';
 
-	const services = readable(
+	const amenities = readable(
 		Object.freeze([
 			{
 				name: 'HI TECH MACHINES',
@@ -63,11 +63,11 @@
 	<div class="flex flex-col items-center">
 		<Header title="Amenities" />
 		<div class="grid gap-10 grid-cols-1 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3">
-			{#each $services as service}
+			{#each $amenities as amenity}
 				<div class=" flex max-w-sm rounded-3xl flex-col items-center">
-					<img class="mb-4 h-12 rounded-lg" alt={service.name} src={service.pic} />
+					<img class="mb-4 h-12 rounded-lg" alt={amenity.name} src={amenity.pic} />
 					<h5 class="m-4 text-sm text-slate-900 font-semibold">
-						{service.name}
+						{amenity.name}
 					</h5>
 				</div>
 			{/each}

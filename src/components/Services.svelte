@@ -41,7 +41,7 @@
 					<h5 class="m-4 text-xl font-bold text-slate-900">
 						{service.name}
 					</h5>
-					<p class="m-4 text-lg font-serif">{service.description}</p>
+					<p class="text-md">{service.description}</p>
 				</div>
 			{/each}
 		</div>

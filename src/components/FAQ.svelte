@@ -42,7 +42,7 @@
 
 <section id="faq">
 	<faq class="flex flex-row">
-		<div class="md:w-2/3 float-right md:p-24 p-10">
+		<div class="lg:w-2/3 float-right lg:p-24 p-10">
 			<Header title="Frequently Asked Questions" />
 
 			<P weight="semibold" class="mb-4">
@@ -66,7 +66,7 @@
 			</Accordion>
 		</div>
 		<div
-			class="md:w-1/3 md:flex md:flex-col hidden bg-slate-900 p-12 md:justify-center md:items-center"
+			class="lg:w-1/3 lg:flex lg:flex-col hidden bg-slate-900 p-12 lg:justify-center lg:items-center"
 		>
 			<P weight="semibold" class="text-white text-3xl mb-10 font-serif">
 				Ready to place your first order?

@@ -42,14 +42,14 @@
 
 <Section sectionId="contact" backGroundColor="bg-slate-50">
 	<Header title="Contact us" />
-	<div class="md:flex md:flex-row">
-		<div class="md:w-4/5 md:float-right md:border-solid md:border-r-4 md:pr-12 border-slate-900">
+	<div class="lg:flex lg:flex-row">
+		<div class="lg:w-4/5 lg:float-right lg:border-solid lg:border-r-4 lg:pr-12 border-slate-900">
 			<p class="font-medium mb-4">
 				We are available via phone or you can also use a quick contact form below.
 			</p>
 
 			<form>
-				<div class="grid gap-6 mb-6 md:grid-cols-2">
+				<div class="grid gap-6 mb-6 lg:grid-cols-2">
 					<div>
 						<Label for="first_name" class="mb-2">First name</Label>
 						<Input type="text" id="first_name" required bind:value={first_name} />
@@ -79,7 +79,7 @@
 				</div>
 			</form>
 		</div>
-		<div class="md:w-1/5 md:flex md:flex-col justify-center m-8 md:mx-12">
+		<div class="lg:w-1/5 lg:flex lg:flex-col justify-center m-8 lg:mx-12">
 			<p class="text-md font-bold pb-2 text-slate-900 flex items-center">
 				<PhoneOutline class="mr-2" />PHONE
 			</p>

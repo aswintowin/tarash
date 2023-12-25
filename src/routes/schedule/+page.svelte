@@ -29,7 +29,7 @@
 	);
 </script>
 
-<div class="flex flex-col items-center md:m-2">
+<div class="flex flex-col items-center lg:m-2">
 	<Header title="" />
 
 	<iframe

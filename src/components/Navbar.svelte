@@ -23,7 +23,6 @@
 			<NavLi href="#faq">FAQ</NavLi>
 			<NavLi href="#ameneties">Amenities</NavLi>
 			<NavLi href="#contact">Contact</NavLi>
-			<NavLi href="/schedule">Order</NavLi>
 		{/if}
 	</NavUl>
 </Navbar>
